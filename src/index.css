@@ -1,0 +1,136 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Login & Register Styles */
+.login-container, .register-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Product Grid Styles */
+.product-grid {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 products per row */
+  gap: 15px; /* Space between products */
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.product-card img {
+  max-width: 100%;
+  max-height: 150px; /* Limit the image height */
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.price-tag {
+  font-size: 0.9em;
+  color: #007bff;
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .products {
+    grid-template-columns: repeat(3, 1fr); /* 3 products per row */
+  }
+}
+
+@media (max-width: 800px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr); /* 2 products per row */
+  }
+}
+
+@media (max-width: 500px) {
+  .products {
+    grid-template-columns: 1fr; /* 1 product per row */
+  }
+}
+.logout-button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dc3545;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
